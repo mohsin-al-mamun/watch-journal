@@ -1,0 +1,10 @@
+.layout{
+background: #FFFFFF;
+color: black;
+display: flex;
+flex-direction: column;
+align-items: start;
+width: 100vw;
+min-height: 100vh;
+}
+
