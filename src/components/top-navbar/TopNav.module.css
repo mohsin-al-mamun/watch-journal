@@ -23,7 +23,7 @@ box-sizing: border-box;
     align-items: center;
 }
 
-img{
+.logo-image{
    
     height: 50px;
     width: auto;

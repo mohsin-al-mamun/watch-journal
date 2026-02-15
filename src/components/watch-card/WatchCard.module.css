@@ -1,0 +1,56 @@
+.container{
+ padding-bottom: 20px;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ width: 100%;
+}
+
+.watch-wrapper{
+    aspect-ratio: 1/1;
+    background:#f0f0f0; 
+    margin-bottom: 20px;
+    cursor: pointer;
+    overflow: hidden;
+    max-width: 410px;
+}
+
+.watch-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.watch-info p {
+    text-align: center;
+    
+}
+
+.watch-name{
+    font-family: "Playfair Display";
+    font-size: 16px;
+    font-weight: 700;
+    color: #1A1A1A;
+    margin: 0px;
+}
+
+.owned-by{
+    font-family: "Montserrat";
+    margin: 0px;
+    font-size: 16px;
+    color:#B8860B;
+    font-weight: 300;
+    line-height: 1.4;
+    margin-bottom: 5px;
+}
+
+.watch-type{
+    margin:0px;
+    color:#757575;
+    font-family:"Montserrat" ;
+    font-weight: 500;
+}
+
+
