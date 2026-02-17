@@ -45,6 +45,12 @@
     outline: none;
 }
 
+.filter-group button.active {
+    border: none;
+    outline: none;
+    background: #f0f0f0;
+}
+
 .watch-card-container{
     display: grid;
     grid-template-columns: 1fr;

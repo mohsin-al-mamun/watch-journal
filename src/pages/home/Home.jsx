@@ -2,8 +2,11 @@ import React from "react";
 import HeroSection from "../../components/herosection/HeroSection";
 import WatchCard from "../../components/watch-card/WatchCard";
 import styles from "./Home.module.css";
+import { useState } from "react";
 
 export default function Home() {
+  const [activeFilter, setActiveFilter] = useState("all");
+  console.log("Value of the Active Filter Button", activeFilter);
   return (
     <main>
       <HeroSection />
@@ -12,9 +15,24 @@ export default function Home() {
         <p>A record of time across hands</p>
       </div>
       <div className={styles["filter-group"]}>
-        <button>All</button>
-        <button>My Watches</button>
-        <button>Others's</button>
+        <button
+          onClick={() => setActiveFilter("all")}
+          className={activeFilter === "all" ? styles.active : ""}
+        >
+          All
+        </button>
+        <button
+          onClick={() => setActiveFilter("my_watch")}
+          className={activeFilter === "my_watch" ? styles.active : ""}
+        >
+          My Watches
+        </button>
+        <button
+          onClick={() => setActiveFilter("other")}
+          className={activeFilter === "other" ? styles.active : ""}
+        >
+          Others's
+        </button>
       </div>
 
       <div className={styles["watch-card-container"]}>
