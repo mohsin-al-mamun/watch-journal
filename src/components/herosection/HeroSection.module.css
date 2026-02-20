@@ -31,7 +31,7 @@
 
 
 .subtittle{
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Courier New",Courier, monospace;
     font-size: 18px;
     line-height: 1.2;
     letter-spacing: 1px;
@@ -41,10 +41,12 @@
 .herobtn{
     background: transparent;
     border: 1px solid #FFFFFF80;
+    padding: 10px;
     color: #fff;
     font-size: 18px;
     cursor: pointer;
     outline: none;
+    font-family:monospace
 }
 
 .herobtn:hover{

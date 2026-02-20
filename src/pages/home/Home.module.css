@@ -12,10 +12,11 @@
 }
 
 .watch-details-title p {
+    font-family: "Playfair Display", serif;
     text-align: center;
     color: #4b4a4a;
     margin-top: 10px;
-    font-size: 24px;
+    font-size: 28px;
     
 }
 
@@ -35,7 +36,7 @@
     outline: none;
     transition: none;
     font-size: 14px;
-    font-family:Inter, sans-serif; ;
+    font-family:monospace ;
 
 }
 
