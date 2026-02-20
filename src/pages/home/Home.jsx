@@ -3,9 +3,10 @@ import HeroSection from "../../components/herosection/HeroSection";
 import WatchCard from "../../components/watch-card/WatchCard";
 import styles from "./Home.module.css";
 import { useState } from "react";
+import Banner from "../../components/banner/Banner";
 
 export default function Home() {
-  const [activeFilter, setActiveFilter] = useState("all");
+  const [activeFilter, setActiveFilter] = useState("");
   console.log("Value of the Active Filter Button", activeFilter);
   return (
     <main>
@@ -40,6 +41,8 @@ export default function Home() {
         <WatchCard watchImg="public/images/gptwatch2.webp" />
         <WatchCard watchImg="public/images/watch3.webp" />
       </div>
+
+      <Banner />
     </main>
   );
 }
