@@ -9,7 +9,7 @@ export default function TopNav() {
           <div className={styles["inner-container"]}>
             <a href="" className={styles.logo}>
               <img
-                src="public/images/logo-transparent1.png"
+                src="/images/logo-transparent1.png"
                 className={styles["logo-image"]}
                 alt=""
               />
