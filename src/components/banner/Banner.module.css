@@ -22,6 +22,7 @@
 #bannerImage img{
     width: 300px;
     height: auto ;
+    rotate: -30deg;
    
 }
 
