@@ -22,16 +22,14 @@
     text-transform: capitalize;
 }
 
-.titleup{
 
-}
 .titledown{
     margin-left: 5px;
 }
 
 
 .subtittle{
-    font-family: "Courier New",Courier, monospace;
+    font-family:  monospace;
     font-size: 18px;
     line-height: 1.2;
     letter-spacing: 1px;

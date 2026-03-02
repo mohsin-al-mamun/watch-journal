@@ -6,12 +6,13 @@ import Home from "./pages/home/Home";
 import WatchDetails from "./pages/watch-details/WatchDetails";
 
 function App() {
-  const [count, setCount] = useState(0);
+  console.log("Routes Object -----", Routes);
+  console.log("Route Object  -----", Route);
 
   return (
     <Routes>
-      <Route path="/" element={<MainLayout />}>
-        <Route index element={<Home />} />
+      <Route element={<MainLayout />}>
+        <Route path="/" element={<Home />} />
         <Route path="watch/:id" element={<WatchDetails />} />
       </Route>
     </Routes>
