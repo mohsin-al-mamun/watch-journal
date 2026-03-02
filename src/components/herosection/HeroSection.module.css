@@ -9,7 +9,7 @@
     width: 50%;
     height: 100%;
     color: #FFFFFF;
-    padding-top: 20%;
+    padding-top: 15%;
     padding-left: 75px;
 }
 
@@ -17,7 +17,7 @@
     font-size: 44px;
     font-weight: 600;
     font-family: 'Playfair Display', serif;;
-    margin: 0;
+    margin-bottom: 20px;
     line-height: 1.1;
     text-transform: capitalize;
 }
@@ -33,6 +33,7 @@
     font-size: 18px;
     line-height: 1.2;
     letter-spacing: 1px;
+    margin: 20px 0px;
 }
 
 
