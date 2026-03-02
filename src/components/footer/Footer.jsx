@@ -9,16 +9,28 @@ export default function Footer() {
           <img src="/images/logo_only.png" alt="Logo" />
         </div>
         <div className={styles.socialMediaDiv}>
-          <div className={styles.socialBtn}>
+          <a
+            href="https://www.facebook.com/oxg.mamun/"
+            target="_blank"
+            className={styles.socialBtn}
+          >
             <img src="/images/facebook.svg" alt="Facebook" />
-          </div>
+          </a>
 
-          <div className={styles.socialBtn}>
+          <a
+            href="https://www.linkedin.com/in/mohsinalmamun/"
+            target="_blank"
+            className={styles.socialBtn}
+          >
             <img src="/images/linkedin.svg" alt="Linkedin" />
-          </div>
-          <div className={styles.socialBtn}>
+          </a>
+          <a
+            href="https://github.com/mohsin-al-mamun"
+            target="_blank"
+            className={styles.socialBtn}
+          >
             <img src="/images/github.svg" alt="Github" />
-          </div>
+          </a>
         </div>
 
         <hr className={styles.divider} />
