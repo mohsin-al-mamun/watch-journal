@@ -6,8 +6,8 @@ export default function HeroSection() {
     <div className={styles.container}>
       <div className={styles["text-div"]}>
         <p className={styles.title}>
-          <span className={styles.titleup}>Timeless elegance,</span>
-          <span className={styles.titledown}>Crafted to endure.</span>
+          <span className={styles.titleup}>Timeless Elegance,</span>
+          <span className={styles.titledown}>Crafted to Endure.</span>
         </p>
         <p className={styles.subtittle}>
           A curated journal celebrating classic watches,

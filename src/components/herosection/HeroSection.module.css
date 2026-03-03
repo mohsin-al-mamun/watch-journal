@@ -18,8 +18,9 @@
     font-weight: 600;
     font-family: 'Playfair Display', serif;;
     margin-bottom: 20px;
-    line-height: 1.1;
-    text-transform: capitalize;
+    line-height: 1.2;
+    letter-spacing: 0.5px;
+    /* text-transform: capitalize; */
 }
 
 
@@ -29,7 +30,7 @@
 
 
 .subtittle{
-    font-family:  monospace;
+    font-family: "Inter", sans-serif;
     font-size: 18px;
     line-height: 1.2;
     letter-spacing: 1px;
