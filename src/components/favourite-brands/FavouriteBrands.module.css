@@ -1,0 +1,47 @@
+.section{
+    width: 100%;
+    /* height: 300px; */
+    background: #f0f0f0;
+    /* background: #ffffff; */
+    margin-bottom: 100px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+section h2{
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-family: "Playfair Display", serif;
+    font-size: 28px;
+}
+
+.brands{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.brandItem{
+    background: white;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex: 1 1 180px;
+    max-width: 220px;
+}
+
+.brandItem img{
+    height: 60px;
+    width: auto;
+    max-width: 100%
+
+}
