@@ -1,18 +1,23 @@
-import React from "react";
+import React, { useState, useRef } from "react";
 import HeroSection from "../../components/herosection/HeroSection";
 import WatchCard from "../../components/watch-card/WatchCard";
 import styles from "./Home.module.css";
-import { useState } from "react";
 import Banner from "../../components/banner/Banner";
 import FavouriteBrands from "../../components/favourite-brands/FavouriteBrands";
 
 export default function Home() {
   const [activeFilter, setActiveFilter] = useState("");
-  console.log("Value of the Active Filter Button", activeFilter);
+  const watchSectionRef = useRef(null);
+  const scrollToWacthSection = () => {
+    watchSectionRef.current.scrollIntoView({ behavior: "smooth" });
+  };
+
+  console.log("The Value of watchSectionRef ---", watchSectionRef);
+
   return (
     <main>
-      <HeroSection />
-      <div className={styles["watch-details-title"]}>
+      <HeroSection scrollToWacthSection={scrollToWacthSection} />
+      <div className={styles["watch-details-title"]} ref={watchSectionRef}>
         <h1>Family Watch Collection</h1>
         <p>A record of time across hands</p>
       </div>

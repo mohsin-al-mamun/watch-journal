@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./HeroSection.module.css";
 
-export default function HeroSection() {
+export default function HeroSection({ scrollToWacthSection }) {
   return (
     <div className={styles.container}>
       <div className={styles["text-div"]}>
@@ -13,7 +13,9 @@ export default function HeroSection() {
           A curated journal celebrating classic watches,
           <br /> craftsmanship, and enduring design.
         </p>
-        <button className={styles.herobtn}>Explore Collection</button>
+        <button className={styles.herobtn} onClick={scrollToWacthSection}>
+          Explore Collection
+        </button>
       </div>
     </div>
   );
