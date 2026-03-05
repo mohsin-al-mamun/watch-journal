@@ -4,17 +4,16 @@ import "./App.css";
 import { Routes, Route } from "react-router";
 import Home from "./pages/home/Home";
 import WatchDetails from "./pages/watch-details/WatchDetails";
+import CssPractice from "./components/styles-practice/CssPractice";
 
 function App() {
-  console.log("Routes Object -----", Routes);
-  console.log("Route Object  -----", Route);
-
   return (
     <Routes>
       <Route element={<MainLayout />}>
         <Route path="/" element={<Home />} />
         <Route path="watch/:id" element={<WatchDetails />} />
       </Route>
+      <Route path="/css" element={<CssPractice />} />
     </Routes>
   );
 }

@@ -4,6 +4,7 @@ import WatchCard from "../../components/watch-card/WatchCard";
 import styles from "./Home.module.css";
 import { useState } from "react";
 import Banner from "../../components/banner/Banner";
+import FavouriteBrands from "../../components/favourite-brands/FavouriteBrands";
 
 export default function Home() {
   const [activeFilter, setActiveFilter] = useState("");
@@ -43,6 +44,7 @@ export default function Home() {
       </div>
 
       <Banner />
+      <FavouriteBrands />
     </main>
   );
 }

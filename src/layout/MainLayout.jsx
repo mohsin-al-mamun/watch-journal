@@ -7,10 +7,7 @@ export default function MainLayout() {
   return (
     <div className={styles.layout}>
       <TopNav />
-      <div className={styles.main}>
-        <Outlet />
-        <FavouriteBrands />
-      </div>
+      <Outlet />
       <Footer />
     </div>
   );
