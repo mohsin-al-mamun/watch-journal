@@ -6,8 +6,8 @@ export default function FavouriteBrands() {
     <section className={styles.section}>
       <h2>Brands I am using</h2>
       <div className={styles.brands}>
-        {FAVOTITE_BRANDS.map((item) => (
-          <div className={styles.brandItem}>
+        {FAVOTITE_BRANDS.map((item, index) => (
+          <div className={styles.brandItem} key={index}>
             <img src={item.path} alt={item.name} />
           </div>
         ))}

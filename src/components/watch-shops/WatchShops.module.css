@@ -1,6 +1,6 @@
 .section{
     width: 100%;
-    background: #d0d0d0;
+    background: #f0f0f0;
     margin-bottom: 100px;
     padding-bottom: 50px;
     display: flex;
@@ -10,7 +10,7 @@
 }
 
 .shopContainer{
-    width: 40%;
+    width: 55%;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 20px;
@@ -19,7 +19,8 @@
 
 .section h2 {
     color: #260f64;
-    font-size: 32px;
+    color:#494545;
+    font-size: 28px;
 }
 
 .shop{

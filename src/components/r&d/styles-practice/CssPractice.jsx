@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./CssPractice.module.css";
-import { FAVOTITE_BRANDS } from "../../data/watches";
+import { FAVOTITE_BRANDS } from "../../../data/watches";
 
 export default function CssPractice() {
   return (

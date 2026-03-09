@@ -10,15 +10,12 @@ export default function WatchShops() {
           <img src="/images/shops/clockwise.png" alt="" />
         </div>
         <div className={styles.shop}>
-          {" "}
           <img src="/images/shops/timeacess.png" alt="" />
         </div>
         <div className={styles.shop}>
-          {" "}
           <img src="/images/shops/timezone.png" alt="" />
         </div>
         <div className={styles.shop}>
-          {" "}
           <img src="/images/shops/watchzone.png" alt="" />
         </div>
       </div>
