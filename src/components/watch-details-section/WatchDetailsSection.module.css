@@ -1,0 +1,74 @@
+.watch-details-title{
+    margin-top: 100px;
+
+}
+
+.watch-details-title h1 {
+    font-family: "Playfair Display", serif;
+    text-align: center;
+    color: #4b4a4a;
+    margin: 0px;
+    font-size: 40px;
+}
+
+.watch-details-title p {
+    font-family: "Playfair Display", serif;
+    text-align: center;
+    color: #4b4a4a;
+    margin-top: 10px;
+    font-size: 28px;
+    
+}
+
+.filter-group{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.filter-group button {
+    border: none;
+    border-bottom: 1px solid #cecece;
+    background: transparent;
+    color: black;
+    padding: 10px;
+    cursor: pointer;
+    outline: none;
+    transition: none;
+    font-size: 14px;
+    font-family:monospace ;
+
+}
+
+.filter-group button:hover {
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+}
+
+.filter-group button.active {
+    border: none;
+    outline: none;
+    background: #f0f0f0;
+}
+
+.watch-card-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    /* justify-content: center; */
+    gap: 24px;
+}
+
+@media (min-width:768px){
+    .watch-card-container{
+        grid-template-columns: repeat(2,410px);
+        justify-content: center;
+        
+    }
+}
+
+@media (min-width:1200px){
+    .watch-card-container{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
