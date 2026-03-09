@@ -4,7 +4,7 @@ import WatchCard from "../../components/watch-card/WatchCard";
 import Banner from "../../components/banner/Banner";
 import FavouriteBrands from "../../components/favourite-brands/FavouriteBrands";
 import WatchDetailsSection from "../../components/watch-details-section/WatchDetailsSection";
-import { WATCH_INFO } from "../../data/watches";
+import WatchShops from "../../components/watch-shops/WatchShops";
 import styles from "./Home.module.css";
 
 export default function Home() {
@@ -17,9 +17,9 @@ export default function Home() {
     <main className={styles.main}>
       <HeroSection scrollToWacthSection={scrollToWacthSection} />
       <WatchDetailsSection watchSectionRef={watchSectionRef} />
-
       <Banner />
       <FavouriteBrands />
+      <WatchShops />
     </main>
   );
 }

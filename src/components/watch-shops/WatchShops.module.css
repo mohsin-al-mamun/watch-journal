@@ -1,0 +1,49 @@
+.section{
+    width: 100%;
+    /* min-height: 500px; */
+    background: #d0d0d0;
+    margin-bottom: 100px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.shopContainer{
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+   
+}
+
+.section h2 {
+    color: #260f64;
+}
+
+.shop{
+    /* background: blue; */
+
+}
+
+.shop img {
+    width: 100%;
+    height: 130px;
+}
+
+@media (max-width:768px) {
+.shopContainer{
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+   
+}
+
+
+.shop img {
+    width: 100%;
+    height:auto
+    }
+}
