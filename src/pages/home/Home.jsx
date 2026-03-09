@@ -1,9 +1,10 @@
 import React, { useState, useRef } from "react";
 import HeroSection from "../../components/herosection/HeroSection";
 import WatchCard from "../../components/watch-card/WatchCard";
-import styles from "./Home.module.css";
 import Banner from "../../components/banner/Banner";
 import FavouriteBrands from "../../components/favourite-brands/FavouriteBrands";
+import { WATCH_INFO } from "../../data/watches";
+import styles from "./Home.module.css";
 
 export default function Home() {
   const [activeFilter, setActiveFilter] = useState("");
@@ -12,10 +13,8 @@ export default function Home() {
     watchSectionRef.current.scrollIntoView({ behavior: "smooth" });
   };
 
-  console.log("The Value of watchSectionRef ---", watchSectionRef);
-
   return (
-    <main>
+    <main className={styles.main}>
       <HeroSection scrollToWacthSection={scrollToWacthSection} />
       <div className={styles["watch-details-title"]} ref={watchSectionRef}>
         <h1>Family Watch Collection</h1>
@@ -43,9 +42,9 @@ export default function Home() {
       </div>
 
       <div className={styles["watch-card-container"]}>
-        <WatchCard watchImg="public/images/watch1.webp" />
-        <WatchCard watchImg="public/images/gptwatch2.webp" />
-        <WatchCard watchImg="public/images/watch3.webp" />
+        {WATCH_INFO.map((item, index) => (
+          <WatchCard watchImg={item.watchImg} key={index} />
+        ))}
       </div>
 
       <Banner />
